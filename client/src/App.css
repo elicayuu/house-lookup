@@ -1,0 +1,16 @@
+.App__input {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.App__input input {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #999;
+  font-size: 1.2em;
+}
+.App__input p {
+  color: #ddd;
+  font-size: 13px;
+}

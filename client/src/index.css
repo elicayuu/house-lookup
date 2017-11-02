@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "微軟正黑體", sans-serif;
+}
+.content {
+  width: 1200px;
+  margin: 100px auto 0;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.items > div {
+  width: calc(50% - 20px);
+  margin: 0 10px 20px;
+}
+.Tag {
+  display: inline-block;
+  padding: 0.1em 0.4em 0.2em;
+  border: 1px solid #ddd;
+  border-radius: 0.3em;
+  color: #666;
+  font-size: 0.8125em;
+}
+.HouseCard {
+  position: relative;
+  box-sizing: border-box;
+  animation: 0.5s ease-in forwards fadein;
+  opacity: 0;
+}
+.HouseCard > a {
+  text-decoration: none;
+}
+.HouseCard__title {
+  margin: 0 0 1em;
+  font-size: 1.2em;
+}
+.HouseCard__bd {
+  display: flex;
+}
+.HouseCard__img {
+  flex-shrink: 0;
+  width: 280px;
+}
+.HouseCard__img > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.HouseCard__info {
+  padding: 0 10px;
+}
+.HouseCard__info {
+  color: #666;
+}
+.HouseCard__tags {
+  margin: -3px;
+}
+.HouseCard__tags > * {
+  margin: 3px;
+}
+.HouseCard__address,
+.HouseCard__distance {
+  margin: 0.5em 0 0;
+  font-size: 0.8125em;
+}
+.HouseCard__distance > p {
+  margin: 0;
+}
+.HouseCard__distance i {
+  color: rgb(207, 79, 57);
+  font-style: normal;
+}
+.HouseCard__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.HouseCard__price {
+  color: rgb(233, 70, 30);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.HouseCard__status {
+  padding: 0 0.4em;
+  border-radius: 5px;
+  background-color: rgb(146, 177, 10);
+  color: #fff;
+}
+.HouseCard__updated {
+  padding: 0 0.4em;
+  border-radius: 5px;
+  background-color: rgb(233, 70, 30);
+  color: #fff;
+}
+.HouseCard__remove {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background-color: rgb(233, 70, 30);
+  color: #fff;
+  font-size: 13px;
+  transition: all 0.3s ease-out;
+}
+.HouseCard__remove:hover {
+  background-color: rgb(235, 104, 75);
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
